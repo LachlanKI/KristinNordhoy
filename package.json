@@ -29,6 +29,10 @@
     "webpack": "^1.14.0",
     "webpack-dev-middleware": "^1.8.4"
   },
+    "repository": {
+    "type": "git",
+    "url": "git://github.com/LachlanKI/KristinNordhoy.git"
+  },
   "author": "lachlan kosaniuk innes - bigger in japan - biggerjapan@gmail.com",
   "license": "ISC"
 }
