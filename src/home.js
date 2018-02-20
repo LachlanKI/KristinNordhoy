@@ -31,7 +31,7 @@ export default class Home extends React.Component {
                         })
                     }
                 })
-            }, 2500);
+            }, 6000);
         })
     }
     handleLoad() {
