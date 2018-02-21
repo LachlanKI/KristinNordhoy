@@ -1,4 +1,4 @@
-/* lachlan kosaniuk innes - bigger in japan - biggerjapan@gmail.com */
+/* bigger in japan - biggerjapan@gmail.com */
 
 * {
     font-family: 'menlo-regular', cursive;
@@ -333,7 +333,7 @@ a:not(.not):hover {
     }
 
     #carousel {
-        padding-top: 110px;
+        /* padding-top: 110px; */
         /* height: 300px; */
         width: 90%;
         margin-left: auto;
@@ -341,10 +341,10 @@ a:not(.not):hover {
     }
 }
 
-@media screen and (max-height:600px) and (max-width:700px) {
+@media screen and (max-height:400px){
 
     #carousel {
-        padding-top: 100px;
+        padding-top: 15%;
     }
 }
 

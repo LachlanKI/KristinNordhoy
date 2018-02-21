@@ -1,4 +1,4 @@
-// lachlan kosaniuk innes - bigger in japan - biggerjapan@gmail.com
+// bigger in japan - biggerjapan@gmail.com
 
 // set up
 
