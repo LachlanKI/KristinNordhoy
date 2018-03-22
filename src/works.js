@@ -1,4 +1,4 @@
-// bigger in japan - biggerjapan@gmail.com
+// website by yuk - yuk.digital - yukenquiries@gmail.com
 
 import React from 'react';
 import axios from 'axios';

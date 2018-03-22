@@ -1,4 +1,4 @@
-// lachlan kosaniuk innes - bigger in japan - biggerjapan@gmail.com
+// website by yuk - yuk.digital - yukenquiries@gmail.com
 
 const spicedPg = require('spiced-pg');
 let db;
