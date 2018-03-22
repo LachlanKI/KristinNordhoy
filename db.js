@@ -1,4 +1,4 @@
-// website by yuk - yuk.digital - yukenquiries@gmail.com
+// website by yuk - www.yuk.digital - yukenquiries@gmail.com
 
 const spicedPg = require('spiced-pg');
 let db;
