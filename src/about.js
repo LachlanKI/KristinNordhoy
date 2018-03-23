@@ -9,7 +9,7 @@ export default class About extends React.Component {
     }
     render() {
         return (
-            <div>
+
                 <div id='about'>
 
                     <p id='born'>Born in Oslo - 1977</p>
@@ -156,7 +156,6 @@ export default class About extends React.Component {
                         </ul>
                     </div>
                 </div>
-            </div>
         )
     }
 }

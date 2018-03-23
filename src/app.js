@@ -14,8 +14,9 @@ export default class App extends React.Component {
     render() {
         return (
             <div id='app'>
+
                 <header>
-                    <Link id='head-h1' to='/'><h1>Kristin Nordhøy</h1></Link>
+                    <Link id='head-h1' to='/'><h1 id='header-name'>Kristin Nordhøy</h1></Link>
                     <nav>
                         <Link onClick={() => this.handleScroll()} to='/works'>works</Link>
                         <Link onClick={() => this.handleScroll()} to='/about'>about</Link>
@@ -23,11 +24,11 @@ export default class App extends React.Component {
                         <Link onClick={() => this.handleScroll()} to='/contact'>contact</Link>
                     </nav>
                 </header>
-                <div id='content-wrap'>
-                    <div ref='c' id='content'>
-                        {this.props.children}
-                    </div>
+
+                <div ref='c' id='content'>
+                    {this.props.children}
                 </div>
+
             </div>
         )
     }

@@ -24,15 +24,24 @@ main, html {
 /* ------- header */
 
 header {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 12%;
-    width: 90%;
+    height: 90px;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 5;
+}
+
+header a:first-child {
+    margin-left: 60px;
 }
 
 nav {
     font-size: 13px;
+    margin-right: 60px;
 }
 
 nav a {
@@ -41,18 +50,17 @@ nav a {
 
 /* ------- content */
 
-#content-wrap {
-    width: 90%;
-    height: 85%;
-    overflow: hidden;
-}
-
 #content {
     padding-right: 17px;
     width: 100%;
     height: 100%;
+    margin-top: 90px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+}
+
+#content::-webkit-scrollbar {
+    display: none;
 }
 
 /* ------- contact */
@@ -81,15 +89,15 @@ address p {
 
 /* ------- about */
 
-#born {
-    margin-bottom: 30px;
-}
-
 #about {
-    overflow-y: scroll;
+    margin-left: 69px;
 }
 
 .about-section {
+    margin-bottom: 30px;
+}
+
+#born {
     margin-bottom: 30px;
 }
 
@@ -119,6 +127,7 @@ address p {
 
 #exhibitions {
     margin-bottom: 30px;
+    margin-left: 69px;
 }
 
 #exhibitions p {
@@ -138,6 +147,7 @@ address p {
 /* ------- works */
 
 #works-wrap {
+    margin-left: 8px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -147,6 +157,7 @@ address p {
 }
 
 #mediums {
+    margin-left: 61px;
     display: flex;
     align-self: baseline;
 }
@@ -178,7 +189,6 @@ address p {
 }
 
 #image-wrap {
-    /* height: 500px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,6 +208,7 @@ address p {
 }
 
 #info {
+    margin-left: 60px;
     height: 71px;
     display: flex;
     flex-direction: column;
@@ -206,6 +217,7 @@ address p {
 
 #arrows {
     height: 71px;
+    margin-right: 60px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -226,12 +238,13 @@ address p {
 }
 
 #prev {
-    margin-right: 69px;
+    margin-right: 61px;
 }
 
 /* ------- home */
 
 #carousel-wrap {
+    margin-left: 8px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -257,7 +270,6 @@ address p {
 .caro-hide {
     pointer-events: none;
     opacity: 0;
-    /* display: none; */
     transition: box-shadow 0s;
     box-shadow: 2px 2px white;
 }
@@ -265,13 +277,11 @@ address p {
 .caro-show {
     pointer-events: all;
     opacity: 1;
-    /* display: block; */
     transition: box-shadow 0s;
 }
 
 .caro-hide:hover {
     box-shadow: 2px 2px black;
-    /* transform: rotate(180deg); */
 }
 
 .caro-anchor {
@@ -299,175 +309,238 @@ a:not(.not):hover {
 
 /* ------- media queries */
 
-@media screen and (max-height:400px) {
-    main, html {
-        overflow-y: scroll;
-    }
-
-    #content-wrap {
-        height: 300px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    header {
-        height: 50px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+ @media screen and (max-height:700px) {
      #app {
          display: block;
      }
 
-     #image-info {
-         padding-bottom: 81px;
+     #content {
+         margin-left: -8.5px;
+     }
+
+     #works-wrap, #carousel-wrap {
+         height: 610px;
+     }
+
+     #exhibitions, #about, #works-wrap {
+         padding-bottom: 100px;
      }
 }
 
-@media screen and (max-height:600px) {
-    #carousel-wrap {
-        display: block;
+@media screen and (max-width:760px) {
+    #header-name {
+        font-size: 20px;
     }
 
-    #carousel {
-        /* padding-top: 110px; */
-        /* height: 300px; */
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    header a:first-child {
+        margin-left: 10px;
     }
-}
 
-@media screen and (max-height:400px){
-
-    #carousel {
-        padding-top: 15%;
-    }
-}
-
-@media screen and (max-width:655px) {
     nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        height: 100%;
-        margin-left: 15px;
-    }
-
-    #head-h1 {
-        margin-top: 10px;
-        align-self: flex-start;
-    }
-
-    nav a {
-        margin-bottom: 0.2px;
+        margin-right: 5px;
     }
 
     #mediums {
-        flex-direction: column;
-        height: 40px;
-        font-size: 15px;
-        margin-bottom: 70px;
-        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    #mediums h4 {
+        font-size: 14px;
+    }
+
+    .currImg {
+        max-width: 98%;
+        margin: auto;
+    }
+
+    #info {
+        margin-left: 10px;
+    }
+
+    #about, #exhibitions {
+        margin-left: 20px;
+    }
+
+    #about h4, #exhibitions h4 {
+        font-size: 13px;
+    }
+
+    #about li, #about p, #exhibitions li, #exhibitions p {
+        font-size: 11px;
+    }
+
+    #exhibitions h5 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    #header-name {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin: 0px 4px 0px 4px;
+        font-size: 12px;
+    }
+
+    #mediums h4 {
+        font-size: 12px;
+        margin-right: 7px;
+    }
+
+    #info h5 {
+        font-size: 12px;
+    }
+
+    #info p {
+        font-size: 10px;
+    }
+
+    #arrows {
+        margin-right: 12px;
+    }
+
+    #arrows div:last-child {
+        margin-left: 30px;
+    }
+
+    #prev {
+        margin-right: 61px;
+    }
+}
+
+@media screen and (max-width:415px) and (max-height:824px) {
+    #app {
+        display: block;
+    }
+
+    header {
+        height: 30px;
+    }
+
+    #header-name {
+        font-size: 12px;
+    }
+
+    nav a {
+        margin: 0px 2px 0px 2px;
+        font-size: 10px;
+    }
+
+    #content {
+        position: static;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #exhibitions, #about {
+        margin: 10px 10px 0px 10px;
+        padding-bottom: 120px;
+    }
+
+    #about h4, #exhibitions h4 {
+        font-size: 11px;
+    }
+
+    #about li, #about p, #exhibitions li, #exhibitions p {
+        font-size: 9px;
+    }
+
+    #exhibitions h5 {
+        font-size: 10px;
+    }
+
+    #mediums {
+        position: fixed;
+        top: 35px;
+        margin-left: 10px;
+    }
+
+    #mediums h4 {
+        font-size: 10px;
+        margin-right: 7px;
+    }
+
+    #works-wrap {
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    #image-wrap-wrap {
+        height: 75vh;
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        pointer-events: none;
     }
 
     #image-info {
-        margin-top: 15px;
+        position: fixed;
+        bottom: 5px;
+        height: 40px;
     }
 
-    #image-info, #info, #arrows {
-        height: 50px;
+    #info, #arrows {
+        height: 40px;
+    }
+
+    #info {
+        margin-left: 10px;
+    }
+
+    #info h5 {
+        font-size: 9px;
     }
 
     #info p {
         font-size: 8px;
     }
 
-    #info h5 {
-        font-size: 10px;
+    #info p:last-child {
+        font-size: 7px;
     }
 
-}
-
-@media screen and (max-width:455px) {
-    header h1 {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width:655px) and (max-height:555px) {
-    nav {
-        margin-top: 15px;
-    }
-
-    header {
-        margin-bottom: 15px;
-    }
-
-}
-
-/* ------- media queries for current image */
-/* ------- width */
-
-@media screen and (max-width:860px) {
-    .currImg {
-        max-width: 660px;
-    }
-}
-
-@media screen and (max-width:800px) {
-    .currImg {
-        max-width: 600px;
-    }
-}
-
-@media screen and (max-width:700px) {
-    .currImg {
-        max-width: 500px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .currImg {
-        max-width: 449px;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .currImg {
-        max-width: 356px;
-    }
-
-    #arrows div:last-child {
-        margin-left: 5px;
+    #arrows {
+        font-size: 9px;
+        margin-right: 17px;
     }
 
     #prev {
-        margin-right: 44px;
+        margin-right: 51.5px;
     }
-}
 
-@media screen and (max-width:400px) {
     .currImg {
-        max-width: 300px;
+        box-shadow: 0px 0px #FFF;
+        max-width: 100%;
+        max-height: 65vh;
+        margin: auto;
+        pointer-events: all;
     }
-}
 
-/* ------- height */
-
-@media screen and (max-height:750px) {
-    .currImg {
-        margin-top: 30px;
-        margin-bottom: 30px;
+    #carousel-wrap {
+        height: 80vh;
+        width: 100vw;
+        margin: 0;
+        position: fixed;
     }
-}
 
-@media screen and (max-height:555px) and (max-width:655px) {
-    #image-info {
-        padding-bottom: 71px;
+    .caro-hide {
+        box-shadow: 0px 0px #FFF;
     }
+
+    .caro-hide:hover {
+        box-shadow: 0px 0px #000;
+    }
+
+    .currImg:not(.caro-hide):hover {
+        box-shadow: 0px 0px #FFF;
+    }
+
 }
