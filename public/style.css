@@ -1,7 +1,7 @@
 /* website by yuk - www.yuk.digital - yukenquiries@gmail.com */
 
 * {
-    font-family: 'menlo-regular', cursive;
+    font-family: 'menlo-regular', 'helvetica', monospace;
     margin: 0;
 }
 
@@ -16,8 +16,15 @@ main, html {
 #app {
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -26,8 +33,14 @@ main, html {
 header {
     position: fixed;
     top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 90px;
     width: 100%;
@@ -66,11 +79,20 @@ nav a {
 /* ------- contact */
 
 address {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 85%;
     width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-bottom: 50px;
 }
@@ -150,25 +172,41 @@ address p {
     margin-left: 8px;
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 #mediums {
     margin-left: 61px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-item-align: baseline;
     align-self: baseline;
 }
 
 #mediums h4 {
     margin-right: 30px;
+    -webkit-transition: -webkit-filter 0.4s;
+    transition: -webkit-filter 0.4s;
     transition: filter 0.4s;
+    transition: filter 0.4s, -webkit-filter 0.4s;
 }
 
 #mediums h4:hover {
     cursor: pointer;
+    -webkit-filter: invert(30%);
     filter: invert(30%);
 }
 
@@ -180,25 +218,43 @@ address p {
 .currImg {
     max-width: 750px;
     max-height: 500px;
+    -webkit-transition: -webkit-box-shadow 0s;
+    transition: -webkit-box-shadow 0s;
     transition: box-shadow 0s;
+    transition: box-shadow 0s, -webkit-box-shadow 0s;
 }
 
 .currImg:not(.caro-hide):hover {
+    -webkit-box-shadow: 2px 2px black;
     box-shadow: 2px 2px black;
     -webkit-backface-visibility: hidden;
 }
 
 #image-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 #image-info {
     width: 100%;
+    -ms-flex-item-align: baseline;
     align-self: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     height: 71px;
 }
@@ -210,16 +266,29 @@ address p {
 #info {
     margin-left: 60px;
     height: 71px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
 #arrows {
     height: 71px;
     margin-right: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     font-size: 13px;
 }
@@ -229,11 +298,15 @@ address p {
 }
 
 #arrows div {
+    -webkit-transition: -webkit-filter 0.4s;
+    transition: -webkit-filter 0.4s;
     transition: filter 0.4s;
+    transition: filter 0.4s, -webkit-filter 0.4s;
 }
 
 #arrows div:hover {
     cursor: pointer;
+    -webkit-filter: invert(30%);
     filter: invert(30%);
 }
 
@@ -247,40 +320,71 @@ address p {
     margin-left: 8px;
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 #carousel {
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 #carousel a {
-    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    position: absolute;
+    margin: auto;
 }
 
 .caro-hide {
     pointer-events: none;
     opacity: 0;
+    -webkit-transition: -webkit-box-shadow 0s;
+    transition: -webkit-box-shadow 0s;
     transition: box-shadow 0s;
+    transition: box-shadow 0s, -webkit-box-shadow 0s;
+    -webkit-box-shadow: 2px 2px white;
     box-shadow: 2px 2px white;
 }
 
 .caro-show {
     pointer-events: all;
     opacity: 1;
+    -webkit-transition: -webkit-box-shadow 0s;
+    transition: -webkit-box-shadow 0s;
     transition: box-shadow 0s;
+    transition: box-shadow 0s, -webkit-box-shadow 0s;
 }
 
 .caro-hide:hover {
+    -webkit-box-shadow: 2px 2px black;
     box-shadow: 2px 2px black;
 }
 
@@ -296,10 +400,14 @@ address p {
 a {
     text-decoration: none;
     color: black;
+    -webkit-transition: -webkit-filter 0.4s;
+    transition: -webkit-filter 0.4s;
     transition: filter 0.4s;
+    transition: filter 0.4s, -webkit-filter 0.4s;
 }
 
 a:not(.not):hover {
+    -webkit-filter: invert(30%);
     filter: invert(30%);
 }
 
@@ -474,8 +582,15 @@ a:not(.not):hover {
         height: 75vh;
         width: 100vw;
         position: fixed;
+        display: -webkit-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         overflow: hidden;
         pointer-events: none;
@@ -517,6 +632,7 @@ a:not(.not):hover {
     }
 
     .currImg {
+        -webkit-box-shadow: 0px 0px #FFF;
         box-shadow: 0px 0px #FFF;
         max-width: 100%;
         max-height: 65vh;
@@ -532,14 +648,17 @@ a:not(.not):hover {
     }
 
     .caro-hide {
+        -webkit-box-shadow: 0px 0px #FFF;
         box-shadow: 0px 0px #FFF;
     }
 
     .caro-hide:hover {
+        -webkit-box-shadow: 0px 0px #000;
         box-shadow: 0px 0px #000;
     }
 
     .currImg:not(.caro-hide):hover {
+        -webkit-box-shadow: 0px 0px #FFF;
         box-shadow: 0px 0px #FFF;
     }
 
