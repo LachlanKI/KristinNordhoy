@@ -168,7 +168,7 @@ address p {
 
 /* ------- works */
 
-#works-wrap {
+.works-wrap {
     margin-left: 8px;
     height: 100%;
     width: 100%;
@@ -450,11 +450,11 @@ a:not(.not):hover {
          margin-left: -8.5px;
      }
 
-     #works-wrap, .carousel-wrap {
+     .works-wrap, .carousel-wrap {
          height: 610px;
      }
 
-     #exhibitions, #about, #works-wrap {
+     #exhibitions, #about, .works-wrap {
          padding-bottom: 100px;
      }
 }
@@ -610,7 +610,7 @@ a:not(.not):hover {
         margin-right: 7px;
     }
 
-    #works-wrap {
+    .works-wrap {
         height: 100vh;
         overflow: hidden;
         margin: 0;

@@ -18,6 +18,11 @@ export default class Works extends React.Component {
             this.setState({imageArr:data.data});
             this.refs.wp.style.textDecoration = 'underline';
         })
+        if (navigator.userAgent.indexOf('iPad') !== -1) {
+            var iPadHeight = this.refs.worksWrap.clientHeight - 70 + 'px'
+            this.refs.worksWrap.style.height = iPadHeight;
+            this.refs.worksWrap.style.backgroundColor = 'deeppink';
+        }
     }
     handleMedium(x) {
         this.setState({loading: true}, () => {
@@ -64,7 +69,7 @@ export default class Works extends React.Component {
         const {imageArr, position, loading} = this.state;
 
         return (
-            <div id='works-wrap'>
+            <div ref='worksWrap' className='works-wrap'>
                 <div id='mediums'>
                     <h4 ref='wp' onClick={() => this.handleMedium('wp')}>wall paintings</h4>
                     <h4 ref='p' onClick={() => this.handleMedium('p')}>paintings</h4>
