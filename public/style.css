@@ -432,7 +432,7 @@ address p {
     max-width: 98vw;
     position: relative;
     top: 50px;
-    left: -25vw;
+    left: 50vw;
     margin-left: 1vw;
     margin-right: 1vw;
 }
@@ -530,7 +530,7 @@ a:not(.not):hover {
     .safari-carousel {
         width: 100vw;
         left: 0px;
-        background-color: pink;
+        /* background-color: pink; */
     }
 
     #mediums {
