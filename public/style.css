@@ -316,7 +316,7 @@ address p {
 
 /* ------- home */
 
-#carousel-wrap {
+.carousel-wrap {
     margin-left: 8px;
     height: 100%;
     width: 100%;
@@ -359,9 +359,10 @@ address p {
 }
 
 .safari-carousel {
-    position: fixed;
-    top: 22%;
-    left: 10%;
+    height: 600px;
+    position: absolute;
+    left: 60px;
+    top: 180px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -449,7 +450,7 @@ a:not(.not):hover {
          margin-left: -8.5px;
      }
 
-     #works-wrap, #carousel-wrap {
+     #works-wrap, .carousel-wrap {
          height: 610px;
      }
 
@@ -471,6 +472,12 @@ a:not(.not):hover {
         margin-right: 5px;
     }
 
+    .safari-carousel {
+        width: 100vw;
+        left: 0px;
+        background-color: pink;
+    }
+
     #mediums {
         margin-left: 10px;
     }
@@ -482,6 +489,14 @@ a:not(.not):hover {
     .currImg {
         max-width: 98%;
         margin: auto;
+    }
+
+    .safari-carousel .currImg {
+        max-width: 98vw;
+        position: relative;
+        right: 50vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 
     #info {
@@ -663,7 +678,7 @@ a:not(.not):hover {
         pointer-events: all;
     }
 
-    #carousel-wrap {
+    .carousel-wrap {
         height: 80vh;
         width: 100vw;
         margin: 0;

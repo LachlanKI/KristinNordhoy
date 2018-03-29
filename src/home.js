@@ -12,9 +12,11 @@ export default class Home extends React.Component {
         };
     }
     componentDidMount() {
-        if (navigator.vendor.indexOf('Apple Computer') !== -1) {
-            this.refs.carousel.classList.remove('carousel')
-            this.refs.carousel.classList.add('safari-carousel')
+        if (navigator.vendor.indexOf('Apple Computer') !== -1 && navigator.userAgent.indexOf('iPhone') == -1 && navigator.userAgent.indexOf('iPad') == -1) {
+            this.refs.carouselWrap.classList.remove('carousel-wrap');
+            this.refs.carouselWrap.classList.add('safari-carousel-wrap');
+            this.refs.carousel.classList.remove('carousel');
+            this.refs.carousel.classList.add('safari-carousel');
         }
     }
     startCarousel() {
@@ -50,7 +52,7 @@ export default class Home extends React.Component {
     }
     render() {
         return (
-            <div id='carousel-wrap'>
+            <div ref='carouselWrap' className='carousel-wrap'>
                 <div ref='carousel' className='carousel'>
                     <p id='loader' ref='loader'>loading...</p>
                     <a className="not caro-anchor" ref='a1' href="https://s3.amazonaws.com/kristinnordhoy/carousel/1.jpg" target="_blank">
