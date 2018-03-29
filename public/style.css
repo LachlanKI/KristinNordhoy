@@ -390,6 +390,7 @@ address p {
 
 .iPad-safari-carousel {
     width: 100vw;
+    height: 100%;
     left: 0px;
     position: absolute;
     display: -webkit-box;
@@ -415,15 +416,16 @@ address p {
     -ms-flex-align: center;
     align-items: center;
     position: absolute;
+
 }
 
 .iPad-safari-carousel .currImg {
     max-width: 98vw;
     position: relative;
-    right: 50vw;
+    top: 50px;
+    left: -25vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    opacity: 0.5;
 }
 
 .caro-hide {
