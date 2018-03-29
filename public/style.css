@@ -423,6 +423,7 @@ address p {
     right: 50vw;
     margin-left: 1vw;
     margin-right: 1vw;
+    opacity: 0.5;
 }
 
 .caro-hide {
