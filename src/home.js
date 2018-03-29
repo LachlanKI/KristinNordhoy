@@ -12,7 +12,7 @@ export default class Home extends React.Component {
         };
     }
     componentDidMount() {
-        if (navigator.vendor.indexOf('Apple Computer') !== -1 && navigator.userAgent.indexOf('iPhone') == -1 && navigator.userAgent.indexOf('iPad') == -1) {
+        if (navigator.vendor.indexOf('Apple Computer') !== -1 && navigator.userAgent.indexOf('iPhone') == -1) {
             this.refs.carouselWrap.classList.remove('carousel-wrap');
             this.refs.carouselWrap.classList.add('safari-carousel-wrap');
             this.refs.carousel.classList.remove('carousel');
