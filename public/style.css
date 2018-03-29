@@ -490,7 +490,7 @@ a:not(.not):hover {
 }
 
 .iPad-works-wrap {
-    background-color: lime;
+    /* background-color: lime; */
     height: 89%;
 }
 
