@@ -19,9 +19,7 @@ export default class Works extends React.Component {
             this.refs.wp.style.textDecoration = 'underline';
         })
         if (navigator.userAgent.indexOf('iPad') !== -1) {
-            var iPadHeight = this.refs.worksWrap.clientHeight - 130 + 'px'
-            this.refs.worksWrap.style.height = iPadHeight;
-            this.refs.worksWrap.style.backgroundColor = 'deeppink';
+            this.refs.worksWrap.classList.add('iPad-works-wrap')
         }
     }
     handleMedium(x) {

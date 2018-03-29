@@ -439,6 +439,11 @@ a:not(.not):hover {
     font-size: 10px;
 }
 
+.iPad-works-wrap {
+    background-color: lime;
+    height: 90%;
+}
+
 /* ------- media queries */
 
  @media screen and (max-height:700px) {
