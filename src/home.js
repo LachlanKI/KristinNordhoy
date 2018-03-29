@@ -11,6 +11,12 @@ export default class Home extends React.Component {
             timeout: false
         };
     }
+    componentDidMount() {
+        if (navigator.vendor.indexOf('Apple Computer') !== -1) {
+            this.refs.carousel.classList.remove('carousel')
+            this.refs.carousel.classList.add('safari-carousel')
+        }
+    }
     startCarousel() {
         this.setState({timeout: false}, () => {
             this.refs[this.state.caroCounter].classList.add('caro-show');
@@ -45,7 +51,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <div id='carousel-wrap'>
-                <div id='carousel'>
+                <div ref='carousel' className='carousel'>
                     <p id='loader' ref='loader'>loading...</p>
                     <a className="not caro-anchor" ref='a1' href="https://s3.amazonaws.com/kristinnordhoy/carousel/1.jpg" target="_blank">
                         <img ref='1' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/1.jpg"/>
