@@ -414,6 +414,10 @@ address p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    position: absolute;
+}
+
+.iPad-safari-carousel .currImg {
     max-width: 98vw;
     position: relative;
     right: 50vw;
