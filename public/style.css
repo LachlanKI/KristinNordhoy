@@ -358,10 +358,12 @@ address p {
     position: absolute;
 }
 
-.safari-carousel-wrap{
+.safari-carousel-wrap {
     background-color: purple;
-    height: 89vh;
-    width: 100vw;
+    /* height: 100%;
+    width: 100%; */
+    height: 300px;
+    width: 300px;
     display: block;
 }
 
