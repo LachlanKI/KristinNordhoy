@@ -372,9 +372,39 @@ address p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    background-color: pink;
 }
 
 .safari-carousel a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+}
+
+.iPad-safari-carousel {
+    width: 100vw;
+    left: 0px;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: orange;
+}
+
+.iPad-safari-carousel a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -496,7 +526,7 @@ a:not(.not):hover {
         margin: auto;
     }
 
-    .safari-carousel .currImg {
+    .safari-carousel .currImg, .iPad-safari-carousel .currImg {
         max-width: 98vw;
         position: relative;
         right: 50vw;
