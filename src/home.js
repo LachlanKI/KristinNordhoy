@@ -15,12 +15,11 @@ export default class Home extends React.Component {
         if (navigator.vendor.indexOf('Apple Computer') !== -1 && navigator.userAgent.indexOf('iPhone') == -1) {
             if (navigator.userAgent.indexOf('iPad') !== -1) {
                 this.refs.carouselWrap.classList.remove('carousel-wrap');
-                this.refs.carouselWrap.classList.add('safari-carousel-wrap');
+                this.refs.carouselWrap.classList.add('iPad-safari-carousel-wrap');
                 this.refs.carousel.classList.remove('carousel');
                 this.refs.carousel.classList.add('iPad-safari-carousel');
             } else {
                 this.refs.carouselWrap.classList.remove('carousel-wrap');
-                this.refs.carouselWrap.classList.add('safari-carousel-wrap');
                 this.refs.carousel.classList.remove('carousel');
                 this.refs.carousel.classList.add('safari-carousel');
             }

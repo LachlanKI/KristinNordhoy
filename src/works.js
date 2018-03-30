@@ -18,8 +18,12 @@ export default class Works extends React.Component {
             this.setState({imageArr:data.data});
             this.refs.wp.style.textDecoration = 'underline';
         })
-        if (navigator.userAgent.indexOf('iPad') !== -1) {
-            this.refs.worksWrap.classList.add('iPad-works-wrap')
+        if (navigator.vendor.indexOf('Apple Computer') !== -1 && navigator.userAgent.indexOf('iPhone') == -1) {
+            if (navigator.userAgent.indexOf('iPad') !== -1) {
+                this.refs.worksWrap.classList.add('iPad-works-wrap');
+            } else {
+                this.refs.worksWrap.classList.add('safari-works-wrap');
+            }
         }
     }
     handleMedium(x) {
