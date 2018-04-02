@@ -101,12 +101,20 @@ address p, address a {
     font-size: 13px;
 }
 
-address a:last-child {
+#insta {
     margin-top: 3px;
 }
 
 address p {
     margin-top: 5px;
+    overflow: hidden;
+}
+
+#yuk {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    font-size: 9px;
 }
 
 /* ------- about */
