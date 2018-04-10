@@ -85,7 +85,7 @@ export default class Works extends React.Component {
                                 <a className='not' href={`https://s3.amazonaws.com/kristinnordhoy/images/${imageArr[position].id}.jpg`} target='_blank'>
                                     <img
                                         ref='img'
-                                        className='currImg' src={`https://s3.amazonaws.com/kristinnordhoy/images/${imageArr[position].id}.jpg`}
+                                        className='currImg' src={`https://s3.amazonaws.com/kristinnordhoy/lowRes/${imageArr[position].id}.jpg`}
                                         style={{display:'none'}}
                                         onLoad={() => this.handleLoad()}
                                     />

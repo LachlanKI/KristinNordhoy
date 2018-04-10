@@ -115,6 +115,7 @@ address p {
     bottom: 5px;
     right: 5px;
     font-size: 9px;
+    z-index: 20;
 }
 
 /* ------- about */
