@@ -50,7 +50,7 @@ export default class Home extends React.Component {
     }
     handleLoad() {
         this.setState({loadCounter: this.state.loadCounter += 1}, () => {
-            if (this.state.loadCounter == 2) {
+            if (this.state.loadCounter == 5) {
                 this.refs.loader.style.display = 'none';
                 this.startCarousel();
             }
@@ -62,28 +62,28 @@ export default class Home extends React.Component {
                 <div ref='carousel' className='carousel'>
                     <p id='loader' ref='loader'>loading...</p>
                     <a className="not caro-anchor" ref='a1' href="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/1.jpg" target="_blank">
-                        <img ref='1' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/1.jpg"/>
+                        <img ref='1' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/1.jpg"/>
                     </a>
                     <a className="not caro-anchor" ref='a2' href="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/2.jpg" target="_blank">
-                        <img ref='2' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/2.jpg"/>
+                        <img ref='2' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/2.jpg"/>
                     </a>
                     <a className="not caro-anchor" ref='a3' href="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/3.jpg" target="_blank">
-                        <img ref='3' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/3.jpg" alt="not_loaded" />
+                        <img ref='3' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/3.jpg" alt="not_loaded" />
                     </a>
                     <a className="not caro-anchor" ref='a4' href="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/4.jpg" target="_blank">
-                        <img ref='4' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/4.jpg" alt="not_loaded" />
+                        <img ref='4' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/4.jpg" alt="not_loaded" />
                     </a>
                     <a className="not caro-anchor" ref='a5' href="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/5.jpg" target="_blank">
-                        <img ref='5' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/5.jpg" alt="not_loaded" />
+                        <img ref='5' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/5.jpg" alt="not_loaded" />
                     </a>
                     <a className="not caro-anchor" ref='a6' href="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/6.jpg" target="_blank">
-                        <img ref='6' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/6.jpg" alt="not_loaded" />
+                        <img ref='6' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/6.jpg" alt="not_loaded" />
                     </a>
                     <a className="not caro-anchor" ref='a7' href="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/7.jpg" target="_blank">
-                        <img ref='7' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/7.jpg" alt="not_loaded" />
+                        <img ref='7' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/7.jpg" alt="not_loaded" />
                     </a>
                     <a className="not caro-anchor" ref='a8' href="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/8.jpg" target="_blank">
-                        <img ref='8' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/8.jpg" alt="not_loaded" />
+                        <img ref='8' className='currImg caro-hide' onLoad={this.handleLoad.bind(this)} src="https://s3.amazonaws.com/kristinnordhoy/carousel/highRes/8.jpg" alt="not_loaded" />
                     </a>
                 </div>
             </div>
